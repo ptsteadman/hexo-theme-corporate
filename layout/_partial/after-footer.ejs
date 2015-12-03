@@ -1,0 +1,76 @@
+<% if (config.disqus_shortname){ %>
+<script>
+  var disqus_shortname = '<%= config.disqus_shortname %>';
+  <% if (page.permalink){ %>
+  var disqus_url = '<%= page.permalink %>';
+  <% } %>
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<% } %>
+
+
+
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<%- js('metronic/assets/plugins/respond.min.js') %>
+<![endif]--> 
+<%- js('metronic/assets/plugins/jquery.min.js') %>
+<%- js('metronic/assets/plugins/jquery-migrate.min.js') %>
+<%- js('metronic/assets/plugins/bootstrap/js/bootstrap.min.js') %>
+<%- js('metronic/assets/corporate/scripts/back-to-top.js') %>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE LEVEL JAVASCRIPT (REQUIRED ONLY FOR CURRENT PAGE) -->
+<%- js('metronic/assets/plugins/fancybox/source/jquery.fancybox.pack.js') %>
+<%- js('metronic/assets/plugins/owl.carousel/owl.carousel.min.js') %>
+
+<%- js('metronic/assets/corporate/scripts/layout.js') %>
+<%- js('metronic/assets/pages/scripts/bs-carousel.js') %>
+
+<%- js('http://maps.google.com/maps/api/js?sensor=true') %> 
+<%- js('metronic/assets/plugins/gmaps/gmaps.js') %>
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();    
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling(); 
+    });
+</script>
+<% if (page.layout == "contact"){ %>
+<script>
+  var map;
+  $(document).ready(function(){
+    map = new GMaps({
+	  div: '#map',
+	  lat: <%= theme.lat %>,
+	  lng: <%= theme.long %>,
+    });
+     var marker = map.addMarker({
+      lat: <%= theme.lat %>,
+      lng: <%= theme.long %>,
+      title: "<%= config.title %>",
+      infoWindow: {
+	  content: "<%- '<b>' + config.title + '</b><br>' + theme.address_1 +
+	  "<br>" + theme.address_2 + "<br>" + theme.address_3 %>"
+      }
+  });
+
+     marker.infoWindow.open(map, marker);
+  });
+</script>
+<!-- END PAGE LEVEL JAVASCRIPTS -->
+<% } %>
+
+<% if (theme.fancybox){ %>
+  <%- css('fancybox/jquery.fancybox') %>
+  <%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>

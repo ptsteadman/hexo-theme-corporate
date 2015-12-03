@@ -1,0 +1,40 @@
+# Header
+menu:
+  Home: /
+  Projects: /projects/
+  Blog: /blog/
+  Contact: /contact/
+  About: /about/
+   
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+about: Computer Lab is a software development and marketing company based in Brooklyn, New York.
+phone: 716-472-4484
+email: ptsteadman@gmail.com
+address_1: 889 Broadway
+address_2: Suite 3A
+address_3: Brooklyn, NY 11206
+skype: ptsteadman
+lat: 40.698171
+long: -73.937021
