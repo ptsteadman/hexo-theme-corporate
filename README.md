@@ -14,24 +14,26 @@ Includes:
 
 
 ## Installation
--  Copy the contents of `_source` to ...
-
-### Install
+- Create a new hexo project with `hexo init`.
+- Install the theme by cloning this repository to the `themes` directory.
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporate
 ```
+- Copy the contents of `themes/corporate/_source` to `_source`.
+- Remove the line containing `hexo-generator-index` from `package.json`.
+- Edit `themes/corporate/_config.yml`.
 
-**Landscape requires Hexo 2.4 and above.**
+Version requirements?
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `corporate`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/corporate
 git pull
 ```
 
