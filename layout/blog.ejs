@@ -1,5 +1,6 @@
 <div class="container">
 <section id="main">
+  <% console.log(config.archive) %>
   <!-- BEGIN CONTENT -->
   <div class="col-md-12 col-sm-12">
     <h1>Blog</h1>
@@ -104,6 +105,12 @@
 	    <li><a href="javascript:;">5</a></li>
 	    <li><a href="javascript:;">Next</a></li>
 	  </ul>               
+	  <nav id="page-nav">
+	    <%- paginator({
+	      prev_text: '&laquo; Prev',
+	      next_text: 'Next &raquo;'
+	    }) %>
+	  </nav>
 	</div>
 	<!-- END LEFT SIDEBAR -->
 

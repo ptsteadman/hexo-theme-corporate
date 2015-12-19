@@ -1,8 +1,33 @@
+<!--
 <article class="archive-article archive-type-<%= post.layout %>">
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D'}) %>
-      <%- partial('post/title', {class_name: 'archive-article-title'}) %>
     </header>
   </div>
 </article>
+-->
+<div class="row">
+  <div class="col-md-4 col-sm-4">
+    <img class="img-responsive" alt="" src="/metronic/assets/pages/img/works/img4.jpg">
+  </div>
+  <div class="col-md-8 col-sm-8">
+    <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
+      </li>
+      <li><i class="fa fa-comments"></i> 17</li>
+      <li>
+	<i class="fa fa-tags"></i>
+	<% post.tags.forEach(function(tag, i){ %>
+	  <%- link_to(tag.path, tag.name) %><% if (i != post.tags.length - 1){ %>,<% } %>
+	<% }); %>
+      </li>
+    </ul>
+    <p><%- post.excerpt %></p>
+    <a href="blog-item.html" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
+</div>
+<hr class="blog-post-sep">
