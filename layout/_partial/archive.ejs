@@ -1,4 +1,3 @@
-  <% console.log(page) %>
 <% if (pagination == 2){ %>
   <% page.posts.each(function(post){ %>
     <%- partial('article', {post: post, index: true}) %>
@@ -31,4 +30,10 @@
   <% if (page.posts.length){ %>
     </div></section>
   <% } %>
+  <div id="page-nav" class="pagination">
+    <%- paginator({
+      prev_text: 'Prev',
+      next_text: 'Next'
+    }) %>
+  </div>
 <% } %>
