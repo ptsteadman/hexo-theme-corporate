@@ -1,6 +1,7 @@
 # Hexo Corporate Front End
 
 A full-featured Hexo theme based on Metronic's Corporate Frontend Freebie theme.  
+Live example available [here](http://hexotest.computerlab.io).
 
 Includes:
 
