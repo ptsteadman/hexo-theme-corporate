@@ -1,6 +1,8 @@
+<div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <!--<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>-->
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
   </div>
   <div class="article-inner">
@@ -42,3 +44,8 @@
   </div>
 </section>
 <% } %>
+</div>
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <%- partial('sidebar') %>
+</div>
+</div>

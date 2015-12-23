@@ -1,5 +1,69 @@
-<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
-  <% theme.widgets.forEach(function(widget){ %>
-    <%- partial('_widget/' + widget) %>
-  <% }) %>
-</aside>
+<!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
+<%- partial('_widget/category.ejs') %>
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  <%- partial('_widget/tag.ejs') %>
+</div>
+<!-- END BLOG TAGS -->
+
+
+<!-- BEGIN RECENT NEWS -->                            
+<!--
+  <h2>Recent News</h2>
+  <div class="recent-news margin-bottom-10">
+  <div class="row margin-bottom-10">
+  <div class="col-md-3">
+  <img class="img-responsive" alt="" src="assets/pages/img/people/img2-large.jpg">                        
+  </div>
+  <div class="col-md-9 recent-news-inner">
+  <h3><a href="javascript:;">Letiusto gnissimos</a></h3>
+  <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
+  </div>                        
+  </div>
+  <div class="row margin-bottom-10">
+  <div class="col-md-3">
+  <img class="img-responsive" alt="" src="assets/pages/img/people/img1-large.jpg">                        
+  </div>
+  <div class="col-md-9 recent-news-inner">
+  <h3><a href="javascript:;">Deiusto anissimos</a></h3>
+  <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
+  </div>                        
+  </div>
+  <div class="row margin-bottom-10">
+  <div class="col-md-3">
+  <img class="img-responsive" alt="" src="assets/pages/img/people/img3-large.jpg">                        
+  </div>
+  <div class="col-md-9 recent-news-inner">
+  <h3><a href="javascript:;">Tesiusto baissimos</a></h3>
+  <p>Decusamus tiusto odiodig nis simos ducimus qui sint</p>
+  </div>                        
+  </div>
+  </div>
+-->
+<!-- END RECENT NEWS -->                            
+
+<!-- BEGIN BLOG TALKS -->
+<div class="blog-talks margin-bottom-30">
+  <h2>Popular Posts</h2>
+  <div class="tab-style-1">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#tab-1">Multipurpose</a></li>
+      <li><a data-toggle="tab" href="#tab-2">Documented</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="tab-1" class="tab-pane row-fluid fade in active">
+	<p class="margin-bottom-10">Raw denim you probably haven't heard of them jean shorts Austin. eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.</p>
+	<p><a class="more" href="javascript:;">Read more</a></p>
+      </div>
+      <div id="tab-2" class="tab-pane fade">
+	<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. aliquip jean shorts ullamco ad vinyl aesthetic magna delectus mollit. Keytar helvetica VHS salvia..</p>
+      </div>
+    </div>
+  </div>
+</div>                            
+<!-- END BLOG TALKS -->
+
