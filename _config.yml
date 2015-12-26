@@ -23,9 +23,9 @@ widgets:
 
 # Integrations
 disqus_shortname: hexothemecorporate
+google_analytics: UA-70830587-2
 
 # Miscellaneous
-google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
