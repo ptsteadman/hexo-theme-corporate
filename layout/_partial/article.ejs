@@ -36,13 +36,16 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
-<h1>ppppp</h1>
 
+<% if (post.comments && theme.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
+<br>
+<% } %>
+
 </div>
 <div class="col-md-3 col-sm-3 blog-sidebar">
   <%- partial('sidebar') %>
