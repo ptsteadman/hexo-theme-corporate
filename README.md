@@ -11,6 +11,7 @@ Includes:
 - contact form
 - search page
 - custom homepage/index
+- color schemes
 - ...
 
 
