@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
@@ -25,17 +25,31 @@
       <% } %>
     </div>
     <footer class="article-footer">
+      <!--
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
+      -->
       <% if (post.comments && theme.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
       <% } %>
-      <%- partial('post/tag') %>
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+  <ul class="blog-info">
+    <li><i class="fa fa-user"></i> <%- post.author || theme.default_author || "Anonymous" %></li>
+    <li><i class="fa fa-calendar"></i>
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
+    </li>
+    <li><i class="fa fa-comments"></i>
+      <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+    </li>
+    <li><i class="fa fa-tags"></i> 
+	<%- partial('post/tag') %>
+    </li>
+  </ul>
 </article>
+<% if (!index){ %>
+  <%- partial('post/nav') %>
+<% } %>
+
 
 <% if (post.comments && theme.disqus_shortname){ %>
 <section id="comments">

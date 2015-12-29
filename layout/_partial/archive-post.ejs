@@ -9,12 +9,12 @@
       	<i class="fa fa-calendar"></i> 
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
       </li>
-      <li><i class="fa fa-comments"></i> 17</li>
+      <li><i class="fa fa-comments"></i>
+        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+      </li>
       <li>
 	<i class="fa fa-tags"></i>
-	<% post.tags.forEach(function(tag, i){ %>
-	  <%- link_to(tag.path, tag.name) %><% if (i != post.tags.length - 1){ %>,<% } %>
-	<% }); %>
+	<%- partial('post/tag') %>
       </li>
     </ul>
     <%- post.excerpt %>
