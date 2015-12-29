@@ -2,7 +2,6 @@
 <div class="col-md-9 col-sm-9 blog-posts">
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
   </div>
   <div class="article-inner">
@@ -10,6 +9,18 @@
     <% if (post.link || post.title){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'article-title'}) %>
+  <ul class="blog-info">
+    <li><i class="fa fa-user"></i> <%- post.author || theme.default_author || "Anonymous" %></li>
+    <li><i class="fa fa-calendar"></i>
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
+    </li>
+    <li class="hidden-xs"><i class="fa fa-comments"></i>
+      <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+    </li>
+    <li class="hidden-xs"><i class="fa fa-tags"></i> 
+	<%- partial('post/tag') %>
+    </li>
+  </ul>
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
@@ -25,22 +36,11 @@
       <% } %>
     </div>
   </div>
-  <ul class="blog-info hidden-xs">
-    <li><i class="fa fa-user"></i> <%- post.author || theme.default_author || "Anonymous" %></li>
-    <li><i class="fa fa-calendar"></i>
-        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
-    </li>
-    <li><i class="fa fa-comments"></i>
-      <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-    </li>
-    <li><i class="fa fa-tags"></i> 
-	<%- partial('post/tag') %>
-    </li>
-  </ul>
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+  <br>
 </article>
-<% if (!index){ %>
-  <%- partial('post/nav') %>
-<% } %>
 
 
 <% if (post.comments && theme.disqus_shortname){ %>

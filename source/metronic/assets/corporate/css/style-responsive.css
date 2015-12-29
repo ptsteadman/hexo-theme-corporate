@@ -558,8 +558,8 @@
 		width: 100%;
 	}
 	.pagination {
-		margin-bottom: 20px;
-		margin-left: 5px;
+		float: left !important;
+		padding-top: 10px;
 	}
 	.pagination > li {
 		margin-left: 0;

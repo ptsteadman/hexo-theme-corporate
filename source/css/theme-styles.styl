@@ -1,3 +1,5 @@
+/* Paginator styles */
+
 .pagination > a,
 .pagination > span {
   display: inline-block;
@@ -35,3 +37,23 @@
   background-color: #337ab7;
   border-color: #337ab7;
 }
+
+
+#page-nav {
+  float: none !important;
+  margin-bottom: 20px !important;
+  margin-left: 5px;
+}
+
+/* Extra info topbar tweaks */
+
+@media (max-width: 480px) {
+  .pre-header .list-inline li {
+    margin-bottom: 0px;
+  }
+
+  .page-header-fixed .pre-header {
+    display: none;
+  }
+}
+
