@@ -26,6 +26,7 @@ disqus_shortname: hexothemecorporate
 google_analytics: UA-70830587-2
 
 # Miscellaneous
+color_scheme: red   # options: blue, gray, green, orange, red, turquoise
 favicon: /favicon.png
 twitter:
 google_plus:
