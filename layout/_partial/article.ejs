@@ -24,16 +24,8 @@
         <%- post.content %>
       <% } %>
     </div>
-    <footer class="article-footer">
-      <!--
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      -->
-      <% if (post.comments && theme.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
-    </footer>
   </div>
-  <ul class="blog-info">
+  <ul class="blog-info hidden-xs">
     <li><i class="fa fa-user"></i> <%- post.author || theme.default_author || "Anonymous" %></li>
     <li><i class="fa fa-calendar"></i>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>

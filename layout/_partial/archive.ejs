@@ -31,14 +31,15 @@
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
   <% }) %>
   <% if (page.posts.length){ %>
-    </div></section>
+    </div>
+    <div id="page-nav" class="pagination">
+      <%- paginator({
+	prev_text: 'Prev',
+	next_text: 'Next'
+      }) %>
+    </div>
+  </section>
   <% } %>
-  <div id="page-nav" class="pagination" style="margin-bottom: 15px;">
-    <%- paginator({
-      prev_text: 'Prev',
-      next_text: 'Next'
-    }) %>
-  </div>
 <% } %>
 </div>
 <div class="col-md-3 col-sm-3 blog-sidebar">
