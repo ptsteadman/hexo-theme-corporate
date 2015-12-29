@@ -19,6 +19,8 @@
 <%- js('metronic/assets/plugins/gmaps/gmaps.js') %>
 <%- js('metronic/assets/plugins/jquery-mixitup/jquery.mixitup.min.js') %>
 <%- js('metronic/assets/pages/scripts/portfolio.js') %>
+<%- js('metronic/assets/pages/scripts/portfolio.js') %>
+<%- js('js/wow.min.js') %>
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -28,6 +30,7 @@
         Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
         Layout.initNavScrolling(); 
         Portfolio.init();
+	new WOW().init();
     });
 </script>
 <% if (page.layout == "contact"){ %>
