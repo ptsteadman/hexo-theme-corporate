@@ -1,5 +1,10 @@
 <div class="container">
-<section id="main">
+  <ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li class="active">Blog</li>
+  </ul>
+<div id="main">
+  <h1>Blog</h1>
   <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
-</section>
+</div>
 </div>

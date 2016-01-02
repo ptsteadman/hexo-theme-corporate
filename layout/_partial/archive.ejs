@@ -1,6 +1,5 @@
 <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<h2>Blog</h2>
 <% if (pagination == 2){ %>
   <% page.posts.each(function(post){ %>
     <%- partial('article', {post: post, index: true}) %>
