@@ -12,18 +12,19 @@ rss: /atom.xml
 excerpt_link: Read More
 fancybox: true
 
-# Sidebar
-sidebar: right
-widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
-
 # Integrations
 disqus_shortname: hexothemecorporate
 google_analytics: UA-70830587-2
+
+# Social
+social:
+  github: https://github.com/ptsteadman
+  twitter: https://twitter.com/ptsteadman
+  facebook: https://www.facebook.com/ptsteadman
+  rss: atom.xml
+  linkedin: https://linkedin.com/in/ptsteadman
+  stackoverflow: http://stackoverflow.com/users/2480493/patrick-steadman
+
 
 # Miscellaneous
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
@@ -37,11 +38,11 @@ default_author: Anonymous
 about: Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on blah blah blah.
 phone: 716-472-4484
 email: ptsteadman@gmail.com
-address_1: 889 Broadway
-address_2: Suite 3A
-address_3: Brooklyn, NY 11206
+address_1: 140 Metropolitan Avenue
+address_2: 5th Floor
+address_3: Brooklyn, NY 11249
 skype: ptsteadman
-lat: 40.698171
-long: -73.937021
+lat: 40.715911 
+long: -73.962147
 
 
