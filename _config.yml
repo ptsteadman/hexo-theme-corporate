@@ -15,6 +15,7 @@ fancybox: true
 # Integrations
 disqus_shortname: hexothemecorporate
 google_analytics: UA-70830587-2
+swiftype_install_key: mqSgSxnMMDR4bbs2NXuy
 
 # Social
 social:
@@ -25,10 +26,9 @@ social:
   linkedin: https://linkedin.com/in/ptsteadman
   stackoverflow: http://stackoverflow.com/users/2480493/patrick-steadman
 
-
 # Miscellaneous
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
-favicon: /favicon.png
+favicon: /favicon.ico # path from root of hexo site
 twitter:
 google_plus:
 fb_admins:
@@ -44,5 +44,3 @@ address_3: Brooklyn, NY 11249
 skype: ptsteadman
 lat: 40.715911 
 long: -73.962147
-
-
