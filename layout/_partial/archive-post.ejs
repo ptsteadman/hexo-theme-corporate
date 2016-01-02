@@ -17,7 +17,9 @@
 	<%- partial('post/tag') %>
       </li>
     </ul>
-    <%- post.excerpt %>
+    <%- post.lede || post.excerpt %>
+    <br>
+    <br>
     <a href="<%- post.permalink %>" class="more">Read more <i class="icon-angle-right"></i></a>
   </div>
 </div>
