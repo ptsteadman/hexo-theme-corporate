@@ -65,10 +65,6 @@
   }
 }
 
-.header {
-  margin-bottom: 0px !important;
-}
-
 /* Typography */
 
 p {
@@ -88,16 +84,33 @@ h4 {
   height: 600px;
 }
 
+
+.flush-with-header {
+  margin-top: -23px; 
+}
+
 .row-corporate img {
   height: 500px;
   margin-top: 100px;
 }
 
-.row-corporate h1 {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
+.row-corporate-text-container {
+  height: 600px;
+}
 
+/* Pseudo-element used to push text to center */
+.row-corporate-text-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.row-corporate-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 99%;
 }
 
 .bg-light-1 {
