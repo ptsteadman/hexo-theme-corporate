@@ -1,5 +1,5 @@
 <% if (theme.disqus_shortname){ %>
-<% if(page.comments){ %>
+<% if(page.comments && is_post()){ %>
 <script>
   <% if (page.permalink){ %>
     var disqus_config = function () {

@@ -37,7 +37,7 @@
       <ul>
 	<% for (var i in theme.menu){ %>
 	<li class="<%= url_for(theme.menu[i]) == url_for(path).substring(0, url_for(path).lastIndexOf('/') + 1) ? 'active' : ''   %>">
-	  <a  href="<%- url_for(theme.menu[i]) %>"><%= i   %></a>
+	  <a  href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
 	</li>
 	<% } %>
 	<!-- BEGIN TOP SEARCH -->
