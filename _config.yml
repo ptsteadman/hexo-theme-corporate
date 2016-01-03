@@ -29,10 +29,8 @@ social:
 # Miscellaneous
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
 favicon: /favicon.ico # path from root of hexo site
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
+twitter_widget_id: "678830341331820544" # as a string, from https://twitter.com/settings/widgets
+twitter_username: computerlab_ # twitter username without the app
 default_author: Anonymous
 
 about: Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on blah blah blah.

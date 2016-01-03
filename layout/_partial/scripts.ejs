@@ -16,9 +16,7 @@
 <%- js('metronic/assets/pages/scripts/bs-carousel.js') %>
 
 <%- js('http://maps.google.com/maps/api/js?sensor=true') %> 
-<%- js('metronic/assets/plugins/gmaps/gmaps.js') %>
 <%- js('metronic/assets/plugins/jquery-mixitup/jquery.mixitup.min.js') %>
-<%- js('metronic/assets/pages/scripts/portfolio.js') %>
 <%- js('metronic/assets/pages/scripts/portfolio.js') %>
 <%- js('js/wow.min.js') %>
 
@@ -34,28 +32,28 @@
     });
 </script>
 <% if (page.layout == "contact"){ %>
-<script>
-  var map;
-  $(document).ready(function(){
-    map = new GMaps({
-	  div: '#map',
-	  lat: <%= theme.lat %>,
-	  lng: <%= theme.long %>,
+  <script>
+    <%- js('metronic/assets/plugins/gmaps/gmaps.js') %>
+    var map;
+    $(document).ready(function(){
+      map = new GMaps({
+	    div: '#map',
+	    lat: <%= theme.lat %>,
+	    lng: <%= theme.long %>,
+      });
+       var marker = map.addMarker({
+	lat: <%= theme.lat %>,
+	lng: <%= theme.long %>,
+	title: "<%= config.title %>",
+	infoWindow: {
+	    content: "<%- '<b>' + config.title + '</b><br>' + theme.address_1 +
+	    "<br>" + theme.address_2 + "<br>" + theme.address_3 %>"
+	}
     });
-     var marker = map.addMarker({
-      lat: <%= theme.lat %>,
-      lng: <%= theme.long %>,
-      title: "<%= config.title %>",
-      infoWindow: {
-	  content: "<%- '<b>' + config.title + '</b><br>' + theme.address_1 +
-	  "<br>" + theme.address_2 + "<br>" + theme.address_3 %>"
-      }
-  });
 
-     marker.infoWindow.open(map, marker);
-  });
-</script>
-<!-- END PAGE LEVEL JAVASCRIPTS -->
+       marker.infoWindow.open(map, marker);
+    });
+  </script>
 <% } %>
 
 <% if (theme.fancybox){ %>

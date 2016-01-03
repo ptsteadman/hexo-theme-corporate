@@ -22,12 +22,20 @@
           </div>
           <!-- END BOTTOM CONTACTS -->
 
+	<% if (theme.twitter_widget_id){ %>
           <!-- BEGIN TWITTER BLOCK --> 
           <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2 class="margin-bottom-0">Latest Tweet</h2>
-            <a class="twitter-timeline" href="https://twitter.com/twitterapi" data-tweet-limit="1" data-theme="dark" data-link-color="#57C8EB" data-widget-id="455411516829736961" data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @computerlab_...</a>
+
+	  <a data-tweet-limit="1" class="twitter-timeline"
+	  href="https://twitter.com/<%= theme.twitter_username %>"
+	  data-widget-id="<%= theme.twitter_widget_id %>">Tweets by @<%=
+	  theme.twitter_username %></a>
+	  <script>!function(d,s,id){var
+	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
           </div>
           <!-- END TWITTER BLOCK -->
+	<% } %>
         </div>
       </div>
     </div>
