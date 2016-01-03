@@ -5,14 +5,15 @@ Live example available [here](http://hexotest.computerlab.io).
 
 Includes:
 
-- blog posts
-- project portfolios
-- about page
-- contact form
-- search page
+- blog posts with tags and categories
+- project portfolio
 - custom homepage/index
-- color schemes
-- ...
+- about page
+- contact form with google maps
+- multiple color schemes
+- swiftype (search) integration
+- disqus integration
+- social links
 
 
 ## Installation
@@ -20,17 +21,27 @@ Includes:
 - Install the theme by cloning this repository to the `themes` directory.
 
 ``` bash
-$ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporate
+git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporate;
 ```
-- Copy the contents of `themes/corporate/_source` to `_source`.
-- Remove the line containing `hexo-generator-index` from `package.json`.
-- Edit `themes/corporate/_config.yml`.
+- Copy the contents of `themes/corporate/_source` to `_source`, and copy the
+  example site config `themes/corporate/_config.site.yml` to the project root,
+  and rename it to `_config.yml`.
+
+``` bash
+cd path/to/project/;
+cp themes/corporate/_source _source;
+cp themes/corporate/_config.site.yml _config.yml;
+
+```
+- Remove the line containing `hexo-generator-index` from `package.json` in the
+  project root.
+- Install dependencies with `npm install`.
 
 Version requirements?
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `corporate`.
+Modify `theme` setting in the project root `_config.yml` to `corporate`.
 
 ### Update
 
@@ -51,15 +62,6 @@ rss: /atom.xml
 # Content
 excerpt_link: Read More
 fancybox: true
-
-# Sidebar
-sidebar: right
-widgets:
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
 
 # Miscellaneous
 google_analytics:
@@ -91,19 +93,6 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 {% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
 
-### Sidebar
-
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-
-Landscape provides 5 built-in widgets:
-
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
-All of them are enabled by default. You can edit them in `widget` setting.
 
 ## Development
 
