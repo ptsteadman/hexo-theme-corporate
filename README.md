@@ -1,19 +1,26 @@
-# Hexo Corporate Front End
+# Hexo Corporate
 
-A full-featured Hexo theme based on Metronic's Corporate Frontend Freebie theme.  
-Live example available [here](http://hexotest.computerlab.io).
+Hexo Corporate is a full-featured Hexo theme based on the Metronic Corporate
+Frontend freebie framework.  Live example available
+[here](http://hexotest.computerlab.io).
 
-Includes:
+This theme is useful for companies interested in using Hexo to create a
+professional website with an attractive landing page, company blog, contact
+information, and portfolio.  
 
+*Features:*
+
+- custom landing page / index 
 - blog posts with tags and categories
 - project portfolio
-- custom homepage/index
-- about page
 - contact form with google maps
-- multiple color schemes
+- about page
 - swiftype (search) integration
+- multiple color schemes
 - disqus integration
 - social links
+- metronic css framework
+  [link](http://keenthemes.com/multi-purpose-corporate-frontend-themefreebie-corporate-frontend-theme/)
 
 
 ## Installation
@@ -80,6 +87,21 @@ google_plus:
 - **favicon** - Favicon path
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID
+
+## Metronic Freebie License
+
+The Metronic css and javascript components are included with the following
+license:
+
+```
+You are free to use this freebie theme in your any personal or commercial
+projects. All used resources, plugins, stock images are subject to thier own
+licenses!
+
+The only limitation is that you are not permitted to use this theme in a stock
+items that sold in any theme marketplaces(e.g: themeforest.net,
+wrapbootstrap.com, etc...).
+```
 
 ## Features
 
