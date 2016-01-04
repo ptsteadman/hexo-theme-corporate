@@ -24,31 +24,29 @@ information, and portfolio.
 
 
 ## Installation
-- Create a new hexo project with `hexo init`.
-- Install the theme by cloning this repository to the `themes` directory.
 
 ``` bash
 git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporate;
 ```
-- Copy the contents of `themes/corporate/_source` to `_source`, and copy the
-  example site config `themes/corporate/_config.site.yml` to the project root,
-  and rename it to `_config.yml`.
 
-``` bash
-cd path/to/project/;
+## Enable
+
+1. **Add pages.** 
+Copy the contents of `themes/corporate/_source` to `_source`. 
+
+```bash
 cp themes/corporate/_source _source;
-cp themes/corporate/_config.site.yml _config.yml;
-
 ```
-- Remove the line containing `hexo-generator-index` from `package.json` in the
-  project root.
-- Install dependencies with `npm install`.
+2. **Enable custom homepage.**
+Copy the example site config `themes/corporate/_config.site.yml` to the project root,
+renaming it to `_config.yml`.
 
-Version requirements?
+```bash
+cp themes/corporate/_config.site.yml _config.yml;
+```
 
-### Enable
-
-Modify `theme` setting in the project root `_config.yml` to `corporate`.
+Remove the line containing `hexo-generator-index` from `package.json` in the
+project root.
 
 ### Update
 
