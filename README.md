@@ -32,6 +32,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 ## Enable
 
 1. **Add pages.** 
+
 	Copy the contents of `themes/corporate/_source` to `_source`. 
 
 	```bash
@@ -39,6 +40,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 	```
 
 2. **Enable custom homepage.**
+
 	Copy the example site config `themes/corporate/_config.site.yml` to the project root, 
 	renaming it to `_config.yml`.
 
