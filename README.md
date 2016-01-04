@@ -32,21 +32,22 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 ## Enable
 
 1. **Add pages.** 
-Copy the contents of `themes/corporate/_source` to `_source`. 
+	Copy the contents of `themes/corporate/_source` to `_source`. 
 
-```bash
-cp themes/corporate/_source _source;
-```
+	```bash
+	cp themes/corporate/_source _source;
+	```
+
 2. **Enable custom homepage.**
-Copy the example site config `themes/corporate/_config.site.yml` to the project root,
-renaming it to `_config.yml`.
+	Copy the example site config `themes/corporate/_config.site.yml` to the project root, 
+	renaming it to `_config.yml`.
 
-```bash
-cp themes/corporate/_config.site.yml _config.yml;
-```
+	```bash
+	cp themes/corporate/_config.site.yml _config.yml;
+	```
 
-Remove the line containing `hexo-generator-index` from `package.json` in the
-project root.
+	Remove the line containing `hexo-generator-index` from `package.json` in the
+	project root.
 
 ### Update
 
