@@ -26,7 +26,7 @@ information, and portfolio.
 ## Install
 
 ``` bash
-git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporate;
+git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporate
 ```
 
 ## Enable
@@ -36,7 +36,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 	Copy the contents of `themes/corporate/_source` to `_source`. 
 
 	```bash
-	cp themes/corporate/_source _source;
+	cp themes/corporate/_source _source
 	```
 
 2. **Enable custom homepage.**
@@ -45,7 +45,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 	renaming it to `_config.yml`.
 
 	```bash
-	cp themes/corporate/_config.site.yml _config.yml;
+	cp themes/corporate/_config.site.yml _config.yml
 	```
 
 	Remove the line containing `hexo-generator-index` from `package.json` in the
