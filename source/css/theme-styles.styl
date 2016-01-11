@@ -1,3 +1,9 @@
+/* General Overrides of Metronic */
+
+.content-page {
+  margin-right: 0px !important;
+}
+
 /* Paginator styles */
 
 .pagination > a,
@@ -109,6 +115,7 @@ h4 {
 
 
 /* Index styles */
+
 .row-corporate {
   height: 600px; 
   background-size: cover !important; 
@@ -130,7 +137,16 @@ h4 {
   height: 600px;
 }
 
+.bg-light-1 {
+  background: url('/metronic/assets/pages/img/frontend-slider/bg2_BK.jpg') no-repeat center;
+}
+
+.bg-light-2 {
+  background: url('/metronic/assets/pages/img/frontend-slider/bg4.jpg') no-repeat center;
+}
+
 /* Pseudo-element used to push text to center */
+
 .row-corporate-text-container:before {
   content: '';
   display: inline-block;
@@ -145,11 +161,24 @@ h4 {
   width: 99%;
 }
 
-.bg-light-1 {
-  background: url('/metronic/assets/pages/img/frontend-slider/bg2_BK.jpg') no-repeat center;
+/* Project Page Styles */
+
+.mix-info {
+  display: none;
 }
 
-.bg-light-2 {
-  background: url('/metronic/assets/pages/img/frontend-slider/bg4.jpg') no-repeat center;
+.mix_all {
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 
+.mix_all img {
+  width: 100%;
+}
+
+.btn-primary {
+  color: white !important;
+  border: 1px solid #e94d1c !important;
+}

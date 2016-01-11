@@ -6,18 +6,14 @@
 <%- js('metronic/assets/plugins/jquery-migrate.min.js') %>
 <%- js('metronic/assets/plugins/bootstrap/js/bootstrap.min.js') %>
 <%- js('metronic/assets/corporate/scripts/back-to-top.js') %>
-<!-- END CORE PLUGINS -->
-
-<!-- BEGIN PAGE LEVEL JAVASCRIPT (REQUIRED ONLY FOR CURRENT PAGE) -->
-<%- js('metronic/assets/plugins/fancybox/source/jquery.fancybox.pack.js') %>
 <%- js('metronic/assets/plugins/owl.carousel/owl.carousel.min.js') %>
-
 <%- js('metronic/assets/corporate/scripts/layout.js') %>
-<%- js('metronic/assets/pages/scripts/bs-carousel.js') %>
-
-<%- js('metronic/assets/plugins/jquery-mixitup/jquery.mixitup.min.js') %>
-<%- js('metronic/assets/pages/scripts/portfolio.js') %>
 <%- js('js/wow.min.js') %>
+
+<% if (theme.fancybox){ %>
+  <%- css('fancybox/jquery.fancybox') %>
+  <%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
@@ -26,10 +22,22 @@
         Layout.initTwitter();
         Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
         Layout.initNavScrolling(); 
-        Portfolio.init();
 	new WOW().init();
     });
 </script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+<% if (page.title == "Projects"){ %>
+  <%- js('metronic/assets/plugins/jquery-mixitup/jquery.mixitup.min.js') %>
+  <%- js('metronic/assets/pages/scripts/portfolio.js') %>
+  <script>
+    Portfolio.init();
+  </script>
+<% } %>
+
+
+
 <% if (page.layout == "contact"){ %>
   <%- js('http://maps.google.com/maps/api/js?sensor=true') %> 
   <%- js('metronic/assets/plugins/gmaps/gmaps.js') %>
@@ -56,12 +64,10 @@
   </script>
 <% } %>
 
-<% if (theme.fancybox){ %>
-  <%- css('fancybox/jquery.fancybox') %>
-  <%- js('fancybox/jquery.fancybox.pack') %>
-<% } %>
 
-<!-- Integrations -->
+<!-- END PAGE-SPECIFIC PLUGINS --> 
+
+<!-- BEGIN INTEGRATIONS -->
 <% if (theme.swiftype_install_key) { %>
     <script type="text/javascript">
         (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -74,3 +80,4 @@
 <% } %>
 <%- partial('disqus') %>
 <%- partial('google-analytics') %>
+<!-- END INTEGRATIONS -->
