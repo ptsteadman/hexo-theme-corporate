@@ -49,14 +49,11 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 2. **Enable custom homepage.**
 
 	Modify the root site `_config.yml` so that `archive_dir` is set to blog,
-	and `theme` is set to `corporate`.
+	and `theme` is set to `corporate`. 
 
 	```yml
-	# Directory
-	source_dir: source
-	public_dir: public
 	tag_dir: tags
-	archive_dir: blog
+	archive_dir: blog  # change this
 	category_dir: categories
 	
 	... 
@@ -68,7 +65,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 
 	```
 
-	Finally, run `npm install`, and then `hexo server` to run the site.
+	Finally, run `npm install` and then `hexo server` to test out the site.
 
 
 ### Update
