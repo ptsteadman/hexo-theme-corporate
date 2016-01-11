@@ -33,23 +33,43 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 
 1. **Add example pages.** 
 
-	Copy the contents of `themes/corporate/_source` to `_source`. 
+	Copy all of the contents of `themes/corporate/_source` to `_source`.
+	This includes a sample landing page and the contact, project, and
+	about pages.
 
 	```bash
-	cp themes/corporate/_source _source
+	cp -r themes/corporate/_source/* source
 	```
+
+2. **Enable custom landing page.**
+
+        Remove the line containing `hexo-generator-index` from `package.json` in the
+	project root.
 
 2. **Enable custom homepage.**
 
-	Copy the example site config `themes/corporate/_config.site.yml` to the project root, 
-	renaming it to `_config.yml`.
+	Modify the root site `_config.yml` so that `archive_dir` is set to blog,
+	and `theme` is set to `corporate`.
 
-	```bash
-	cp themes/corporate/_config.site.yml _config.yml
+	```yml
+	# Directory
+	source_dir: source
+	public_dir: public
+	tag_dir: tags
+	archive_dir: blog
+	category_dir: categories
+	
+	... 
+
+	# Extensions
+	## Plugins: http://hexo.io/plugins/
+	## Themes: http://hexo.io/themes/
+	theme: corporate
+
 	```
 
-	Remove the line containing `hexo-generator-index` from `package.json` in the
-	project root.
+	Finally, run `npm install`, and then `hexo server` to run the site.
+
 
 ### Update
 
