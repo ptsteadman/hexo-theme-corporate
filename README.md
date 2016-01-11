@@ -19,8 +19,7 @@ information, and portfolio.
 - multiple color schemes
 - disqus integration
 - social links
-- metronic css framework
-  [link](http://keenthemes.com/multi-purpose-corporate-frontend-themefreebie-corporate-frontend-theme/)
+- metronic css framework components
 
 
 ## Install
@@ -34,7 +33,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 1. **Add example pages.** 
 
 	Copy all of the contents of `themes/corporate/_source` to `_source`.
-	This includes a sample landing page and the contact, project, and
+	This includes a sample landing page and contact, project, and
 	about pages.
 
 	```bash
@@ -43,10 +42,10 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 
 2. **Enable custom landing page.**
 
-        Remove the line containing `hexo-generator-index` from `package.json` in the
+	Remove the line containing `hexo-generator-index` from `package.json` in the
 	project root.
 
-2. **Enable custom homepage.**
+3. **Enable theme.**
 
 	Modify the root site `_config.yml` so that `archive_dir` is set to blog,
 	and `theme` is set to `corporate`. 
@@ -61,7 +60,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 	# Extensions
 	## Plugins: http://hexo.io/plugins/
 	## Themes: http://hexo.io/themes/
-	theme: corporate
+	theme: corporate # change this
 
 	```
 
@@ -126,6 +125,33 @@ lat: 40.715911
 long: -73.962147
 ```
 
+
+## Features
+
+### Fancybox
+
+Hexo Corporate uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+
+```
+![img caption](img url)
+
+{% fancybox img_url [img_thumbnail] [img_caption] %}
+```
+
+### Pages
+
+### Swiftype
+
+### Thumbnail
+
+### Featured Posts
+
+### Authors
+
+### Projects
+
+### Color Schemes
+
 ## Metronic Freebie License
 
 The Metronic CSS and JavaScript components are included with the following
@@ -141,24 +167,11 @@ items that sold in any theme marketplaces(e.g: themeforest.net,
 wrapbootstrap.com, etc...).
 ```
 
-## Features
-
-### Fancybox
-
-Hexo Corporate uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
-
-```
-![img caption](img url)
-
-{% fancybox img_url [img_thumbnail] [img_caption] %}
-```
-
-
 ## Development
 
 ### Requirements
 
-- Hexo ??
+- Hexo 3.0
 
 ### Links
 
