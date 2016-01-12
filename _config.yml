@@ -1,8 +1,8 @@
-# Header
+# Header Menu
 menu:
   Home: /
   Projects: /projects/
-  Blog: /archives/
+  Blog: /archives/ # can set archive-dir in root config to custom value
   Contact: /contact/
   About: /about/
    
@@ -10,12 +10,12 @@ rss: /atom.xml
 
 # Content
 excerpt_link: Read More
-fancybox: true
+fancybox: true # whether or not to load the fancybox library
 
 # Integrations
-disqus_shortname: hexothemecorporate
-google_analytics: UA-70830587-2
-swiftype_install_key: mqSgSxnMMDR4bbs2NXuy
+disqus_shortname: 
+google_analytics:
+swiftype_install_key: 
 
 # Social
 social:
@@ -30,10 +30,10 @@ social:
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
 favicon: /favicon.ico # path from root of hexo site
 twitter_widget_id: "678830341331820544" # as a string, from https://twitter.com/settings/widgets
-twitter_username: computerlab_ # twitter username without the app
+twitter_username: computerlab_ # twitter username without the @
 default_author: Anonymous
 
-about: Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on blah blah blah.
+about: Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on so on and so forth.
 phone: 716-472-4484
 email: ptsteadman@gmail.com
 address_1: 140 Metropolitan Avenue

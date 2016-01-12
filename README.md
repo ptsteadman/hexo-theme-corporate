@@ -40,9 +40,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 	cp -r themes/corporate/_source/* source
 	```
 
-
-2. **Enable theme.**
-
+2. **Enable theme.** 
 	Modify the root site `_config.yml` so that `theme` is set to `corporate`. 
 
 	```yml
@@ -55,7 +53,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 
 	Finally, run `npm install` and then `hexo server` to test out the site.
 
-2. **Optional: Enable custom landing page.**
+3. **Optional: Enable custom landing page.**
 
 	To use custom landing page instead of the default archive index, remove
 	the line containing hexo-generator-index from package.json in the project root.
@@ -73,11 +71,11 @@ git pull
 Edit `themes/corporate/_config.yml` for theme-specific configuration.
 
 ``` yml
-# Header
+# Header Menu
 menu:
   Home: /
   Projects: /projects/
-  Blog: /blog/
+  Blog: /archives/ # can set archive-dir in root config to custom value
   Contact: /contact/
   About: /about/
    
@@ -85,12 +83,12 @@ rss: /atom.xml
 
 # Content
 excerpt_link: Read More
-fancybox: true
+fancybox: true # whether or not to load the fancybox library
 
 # Integrations
-disqus_shortname: hexothemecorporate
-google_analytics: UA-70830587-2
-swiftype_install_key: mqSgSxnMMDR4bbs2NXuy
+disqus_shortname: 
+google_analytics:
+swiftype_install_key: 
 
 # Social
 social:
@@ -105,10 +103,10 @@ social:
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
 favicon: /favicon.ico # path from root of hexo site
 twitter_widget_id: "678830341331820544" # as a string, from https://twitter.com/settings/widgets
-twitter_username: computerlab_ # twitter username without the app
+twitter_username: computerlab_ # twitter username without the @
 default_author: Anonymous
 
-about: Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on blah blah blah.
+about: Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on so on and so forth.
 phone: 716-472-4484
 email: ptsteadman@gmail.com
 address_1: 140 Metropolitan Avenue
