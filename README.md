@@ -121,21 +121,54 @@ long: -73.962147
 
 ## Features
 
+### Custom Pages
 
-### Pages
+Contact, Projects, and About pages are included in the theme's `_source` directory.
+When copied to the blog's `source` directory, they can be edited with your custom content.
+Edit the header menu in the themes `_config.yml` to create links to these pages.
+
+You can use [metronic CSS components](http://keenthemes.com/metronic-theme/) to build these pages.
+
+``` yml
+# Header Menu
+menu:
+  Home: /
+  Projects: /projects/
+  Blog: /archives/ # can set archive-dir in root config to custom value
+  Contact: /contact/
+  About: /about/
+```
 
 ### Swiftype
 
+You enable **Swiftype** search funcationality by editing the theme's `_config.yml`.
+
+``` yml
+swiftype_install_key: XXX_XXXXXXXXXXXXXXXX
+```
+
+This `install key` can be found at your own engine's install page:
+
+![](http://ppoffice.github.io/hexo-theme-icarus/gallery/swiftype_install.jpg "")
+
+Finally, don't forget to save your swiftype configuration to complete the installation.
+
 ### Thumbnail
 
-Set the thumbnail parameter 
+Set `thumbnail` in post frontmatter to display an image on the blog/archive page:
 
-### Featured Posts
+	thumbnail: https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png
 
-### Authors
+### Lede
 
-### Projects
+Set `lede` in post frontmatter to display a custom bit of text distinct from an excerpt:
 
+	lede: "This text will appear by the thumbnail in the blog page."
+
+### Author
+
+Set `author` in post frontmatter to display an author's name.  Set `default_author` in the
+site's `_config.yml` to determine author if the frontmatter value is not set.
 
 
 ### Color Schemes
@@ -146,7 +179,7 @@ Hexo Corporate has multiple color schemes, including:
 - green
 - orange
 - blue
-- turqoise
+- turquoise
 
 ### Fancybox
 
