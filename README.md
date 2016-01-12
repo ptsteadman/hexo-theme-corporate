@@ -121,6 +121,33 @@ long: -73.962147
 
 ## Features
 
+
+### Pages
+
+### Swiftype
+
+### Thumbnail
+
+Set the thumbnail parameter 
+
+### Featured Posts
+
+### Authors
+
+### Projects
+
+
+
+### Color Schemes
+
+Hexo Corporate has multiple color schemes, including:
+- red
+- gray
+- green
+- orange
+- blue
+- turqoise
+
 ### Fancybox
 
 Hexo Corporate uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
@@ -130,20 +157,6 @@ Hexo Corporate uses [Fancybox] to showcase your photos. You can use Markdown syn
 
 {% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
-
-### Pages
-
-### Swiftype
-
-### Thumbnail
-
-### Featured Posts
-
-### Authors
-
-### Projects
-
-### Color Schemes
 
 ## Metronic Freebie License
 
