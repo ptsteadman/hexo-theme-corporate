@@ -170,6 +170,8 @@ Set `lede` in post frontmatter to display a custom bit of text distinct from an 
 Set `author` in post frontmatter to display an author's name.  Set `default_author` in the
 site's `_config.yml` to determine author if the frontmatter value is not set.
 
+	lede: "Patrick Steadman"
+
 
 ### Color Schemes
 
@@ -205,12 +207,4 @@ The only limitation is that you are not permitted to use this theme in a stock
 items that sold in any theme marketplaces(e.g: themeforest.net,
 wrapbootstrap.com, etc...).
 ```
-
-## Development
-
-### Requirements
-
-- Hexo 3.0
-
-### Links
 
