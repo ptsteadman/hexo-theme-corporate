@@ -40,23 +40,12 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 	cp -r themes/corporate/_source/* source
 	```
 
-2. **Enable custom landing page.**
 
-	Remove the line containing `hexo-generator-index` from `package.json` in the
-	project root.
+2. **Enable theme.**
 
-3. **Enable theme.**
-
-	Modify the root site `_config.yml` so that `archive_dir` is set to blog,
-	and `theme` is set to `corporate`. 
+	Modify the root site `_config.yml` so that `theme` is set to `corporate`. 
 
 	```yml
-	tag_dir: tags
-	archive_dir: blog  # change this
-	category_dir: categories
-	
-	... 
-
 	# Extensions
 	## Plugins: http://hexo.io/plugins/
 	## Themes: http://hexo.io/themes/
@@ -66,6 +55,11 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 
 	Finally, run `npm install` and then `hexo server` to test out the site.
 
+2. **Optional: Enable custom landing page.**
+
+	To use custom landing page instead of the default archive index, remove
+	the line containing hexo-generator-index from package.json in the project root.
+	Then, edit `source/index.ejs`.
 
 ### Update
 
