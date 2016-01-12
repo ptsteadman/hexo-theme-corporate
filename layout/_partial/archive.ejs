@@ -20,7 +20,7 @@
   <section class="archives-wrap">
     <div class="archives">
       <% page.posts.each(function(post, i){ %>
-	<%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+	<%- partial('archive-post', {post: post, even: i % 2 == 0, index: index}) %>
       <% }) %>
     </div>
     <% if (page.posts.length){ %>
