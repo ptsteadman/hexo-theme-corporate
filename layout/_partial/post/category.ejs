@@ -3,11 +3,12 @@
     <% if (post.categories.length == 1){ %>
     Category: 
     <% } %>
+    Categories:
     <%- list_categories(post.categories, {
       show_count: false,
       class: 'article-category',
       style: 'none',
-      separator: '►'
+      separator: ', '
     }) %>
   </div>
   <br>

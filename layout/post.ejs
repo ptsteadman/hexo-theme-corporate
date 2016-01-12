@@ -1,7 +1,7 @@
 <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="<%= theme.menu ? theme.menu.Blog : '/archives/' %>">Blog</a></li>
     <li class="active">Post</li>
   </ul>
   <section id="main">
