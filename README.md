@@ -1,8 +1,9 @@
 # Hexo Corporate
 
 Hexo Corporate is a full-featured Hexo theme based on the Metronic Corporate
-Frontend freebie framework.  Live example available
-[here](http://hexotest.computerlab.io).
+Frontend freebie framework.  
+
+Live example: [Link](http://hexotest.computerlab.io) | [Source](https://github.com/ptsteadman/hexo-theme-corporate-example)
 
 This theme is useful for companies interested in using Hexo to create a
 professional website with an attractive landing page, company blog, contact
