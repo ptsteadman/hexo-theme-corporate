@@ -172,7 +172,7 @@ Set `lede` in post frontmatter to display a custom bit of text distinct from an 
 Set `author` in post frontmatter to display an author's name.  Set `default_author` in the
 site's `_config.yml` to determine author if the frontmatter value is not set.
 
-	lede: "Patrick Steadman"
+	author: "Patrick Steadman"
 
 
 ### Color Schemes
