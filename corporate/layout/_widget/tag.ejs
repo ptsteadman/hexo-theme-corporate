@@ -1,8 +1,0 @@
-<% if (site.tags.length){ %>
-  <div class="widget-wrap">
-    <div class="widget">
-      <% function addIcon(name){ return "<i class='fa fa-tags'></i>" + name } %>
-      <%- list_tags({ transform: addIcon, show_count: false }) %>
-    </div>
-  </div>
-<% } %>
