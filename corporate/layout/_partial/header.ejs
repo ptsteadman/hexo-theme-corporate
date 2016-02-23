@@ -1,0 +1,64 @@
+<!-- BEGIN TOP BAR -->
+<div class="pre-header">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN TOP BAR LEFT PART -->
+      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
+	<ul class="list-unstyled list-inline">
+	  <li><i class="fa fa-phone"></i><span><%= theme.phone %></span></li>
+	  <li><i class="fa fa-envelope-o"></i><span><%= theme.email %></span></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR LEFT PART -->
+      <!-- BEGIN TOP BAR MENU -->
+      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
+	<ul class="list-unstyled list-inline pull-right">
+	  <li><a href="/login">Log In</a></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR MENU -->
+    </div>
+  </div>        
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+  <div class="container">
+    <a class="site-logo" href="<%- url_for() %>" id="logo"><%= config.title %></a>
+
+    <!--<a class="site-logo" href="/">-->
+      <!--<img src="<%- url_for('metronic/assets/corporate/img/logos/logo-corp-' + theme.color_scheme + '.png') %>" alt="Metronic FrontEnd">-->
+    <!--</a>-->
+
+    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+    <!-- BEGIN NAVIGATION -->
+    <div class="header-navigation pull-right font-transform-inherit">
+      <ul>
+	<% for (var i in theme.menu){ %>
+	<li class="<%= url_for(theme.menu[i]) == url_for(path).substring(0, url_for(path).lastIndexOf('/') + 1) ? 'active' : ''   %>">
+	  <a  href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+	</li>
+	<% } %>
+	<!-- BEGIN TOP SEARCH -->
+	<li class="menu-search">
+	  <span class="sep"></span>
+	  <i class="fa fa-search search-btn"></i>
+	  <div class="search-box">
+	    <form action="#">
+	      <div class="input-group">
+		<input type="text" placeholder="Search" class="form-control st-default-search-input">
+		<span class="input-group-btn">
+		  <button class="btn btn-primary" type="submit">Search</button>
+		</span>
+	      </div>
+	    </form>
+	  </div> 
+	</li>
+	<!-- END TOP SEARCH -->
+      </ul>
+    </div>
+    <!-- END NAVIGATION -->
+  </div>
+</div>
+<!-- Header END -->

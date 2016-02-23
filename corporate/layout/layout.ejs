@@ -1,0 +1,14 @@
+<%- partial('_partial/head') %>
+<!--<link rel="stylesheet" href="/prettify/prettify.css" type="text/css">-->
+
+<!--<script src="/prettify/prettify.min.js" type="text/javascript"></script>-->
+
+<link rel="stylesheet" href="/path/to/styles/default.css">
+
+<body class="corporate">
+  <%- partial('_partial/header', null, { path: path }) %>
+  <%- body %>
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/scripts') %>
+</body>
+</html>
