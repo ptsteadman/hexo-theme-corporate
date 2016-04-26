@@ -35,7 +35,7 @@ git clone https://github.com/ptsteadman/hexo-theme-corporate.git themes/corporat
 
 1. **Add example pages.** 
 
-	Copy all of the contents of `themes/corporate/_source` to `_source`.
+	Copy all of the contents of `themes/corporate/_source` to `source`.
 	This includes a sample landing page and contact, project, and
 	about pages.
 
