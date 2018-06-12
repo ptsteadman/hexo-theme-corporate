@@ -13,9 +13,9 @@ excerpt_link: Read More
 fancybox: true # whether or not to load the fancybox library
 
 # Integrations
-disqus_shortname:
-google_analytics:
-swiftype_install_key:
+disqus_shortname: lukedus-blog
+google_analytics: UA-120716624-1
+swiftype_install_key: pqxNDounbVczn2Fw9KJD
 
 # Social
 social:
