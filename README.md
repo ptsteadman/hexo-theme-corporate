@@ -105,7 +105,6 @@ social:
 # Miscellaneous
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
 favicon: /favicon.ico # path from root of hexo site
-twitter_widget_id: "678830341331820544" # as a string, from https://twitter.com/settings/widgets
 twitter_username: computerlab_ # twitter username without the @
 default_author: Anonymous
 
